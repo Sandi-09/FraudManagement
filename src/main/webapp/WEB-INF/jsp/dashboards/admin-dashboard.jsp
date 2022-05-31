@@ -19,6 +19,11 @@
 					href="/pending-requests">Pending Requests</a></li>
 			</ul>
 		</div>
+			<form class="d-flex">
+				&nbsp;&nbsp; <a class="btn btn-light btn-sm mt-3" href="/log-out">Log-out</a>
+			</form>
+		</div>
+		</div>
 	</div>
 </nav>
 <div class="container">

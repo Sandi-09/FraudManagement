@@ -15,6 +15,10 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="/admin-login">Admin</a></li>
+				<li class="nav-item"><a class="nav-link" href="/personnel-login">Fraud Analysis Personnel</a></li>
+				<li class="nav-item"><a class="nav-link" href="/Userlogin">User</a></li>
 				<li class="nav-item"><a class="nav-link active" href="#">Personnel Registration Page</a></li>
 			</ul>
 		</div>
@@ -24,7 +28,7 @@
 		</div>
 	</div>
 </nav>
-<h1 class="text-center">Register as Personnel</h1>
+<h1 class="text-center">Register as Fraud Analysis Personnel</h1>
 <div class="container">
 	<form:form method="post" modelAttribute="personnel">
 		<fieldset class="form-group">
@@ -86,7 +90,7 @@
 		<button class="btn btn-success mt-3" type="submit">Submit</button>
 	</form:form>
 	<div>
-		Already have an account? <a href="/personnel-registration">Click here</a> to
+		Already have an account? <a href="/personnel-login">Click here</a> to
 		Login
 	</div>
 </div>
