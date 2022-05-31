@@ -17,6 +17,11 @@
 				<li class="nav-item"><a class="nav-link" href="/Userlogin">User</a></li>
 			</ul>
 		</div>
+			<form class="d-flex">
+				&nbsp;&nbsp; <a class="btn btn-light btn-sm mt-3" href="/log-out">Log-out</a>
+			</form>
+		</div>
+		</div>
 	</div>
 </nav>
 <h1 class="text-center">Login as Admin</h1>

@@ -1,6 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ include file="../common/header.jspf"%>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	<div class="container-fluid">
@@ -14,6 +16,10 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="/admin-login">Admin</a></li>
+				<li class="nav-item"><a class="nav-link" href="/personnel-login">Fraud Analysis Personnel</a></li>
+				<li class="nav-item"><a class="nav-link" href="/Userlogin">User</a></li>
 				<li class="nav-item"><a class="nav-link active" href="#">User Registration Page</a></li>
 			</ul>
 		</div>
@@ -82,10 +88,10 @@
 				placeholder="Create Your Password" required="true" />
 			<form:errors path="password" cssClass="text-warning" />
 		</fieldset>
-		<button class="btn btn-success" type="submit">Submit</button>
+		<button class="btn btn-success mt-3" type="submit">Submit</button>
 	</form:form>
 	<div>
-		Already have an account? <a href="/user-registration">Click here</a> to
+		Already have an account? <a href="/Userlogin">Click here</a> to
 		Login
 	</div>
 </div>
