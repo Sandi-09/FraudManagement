@@ -34,6 +34,12 @@
                     </fieldset>
 
                     <fieldset class="form-group">
+                        <form:label path="userId">Enter User Id</form:label>
+                        <form:input class="form-control" type="text" path="userId" placeholder="User Id" autofocus="true" required="true" />
+                        <form:errors path="userId" cssClass="text-warning" />
+                    </fieldset>
+
+                    <fieldset class="form-group">
                         <form:label path="cardHolderName">Enter Card Holder Name</form:label>
                         <form:input class="form-control" type="text" path="cardHolderName" placeholder="Card Holder Name" required="true" />
                         <form:errors path="cardHolderName" cssClass="text-warning" />

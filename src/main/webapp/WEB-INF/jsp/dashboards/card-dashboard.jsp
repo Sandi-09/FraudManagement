@@ -20,8 +20,35 @@
 		</div>
 	</div>
 </nav>
+<h1 class="text-center">Welcome ${card.cardHolderName}</h1>
 
- <a href="/card-registration"><input class="btn btn-success mt-3" type="submit" value="Add Card Fraud"></a>
- <a href="/card-show?id=${user.userId}"><input class="btn btn-success mt-3" type="submit" value="View Card Fraud"></a>
- <a href="/card-update"><input class="btn btn-success mt-3" type="submit" value="Update Card Fraud"></a>
- <a href="/card-delete"><input class="btn btn-warning mt-3" type="submit" value="Delete Card Fraud"></a>
+<div class="container">
+	
+	<table class="table caption-top table-striped">
+		<caption>Your Profile Details are</caption>
+		<thead>
+			<tr>
+				<td>Fields</td>
+				<td>Values</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Name</td>
+				<td>${card.cardHolderName} ${farmer.lastName}</td>
+			</tr>
+
+				<td>Account NO</td>
+				<td>${card.accNo}</td>
+			</tr>
+			<tr>
+				<td>Card No.</td>
+				<td>${card.cardNo}</td>
+			</tr>
+			<tr>
+				<td>Transaction Details</td>
+				<td>${card.transDetails}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

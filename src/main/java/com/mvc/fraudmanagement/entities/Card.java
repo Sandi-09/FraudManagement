@@ -4,8 +4,8 @@ package com.mvc.fraudmanagement.entities;
 import java.util.Date;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
+//import javax.validation.constraints.Max;
+//import javax.validation.constraints.Min;
 import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Size;
 
@@ -20,8 +20,13 @@ public class Card {
 //    @Min(value=16, message="must be equal to 16")  
 //    @Max(value=16, message="must be equal to 16")  
     private long cardNo;
+    
+    @Column(name = "userId", nullable = false)
+    private String userId;
 
-    @Column(name = "CardHolderName", nullable = false)
+
+
+	@Column(name = "CardHolderName", nullable = false)
     @Size(min = 4, message = "Enter Card Holder Name")
     private String cardHolderName;
 
@@ -95,7 +100,14 @@ public class Card {
     public void setAccNo(long accNo) {
         this.accNo = accNo;
     }
+    
+    public String getUserId() {
+		return userId;
+	}
 
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
     public Date getExpiryDate() {
         return expiryDate;
     }
